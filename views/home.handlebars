@@ -1,0 +1,20 @@
+<h1>{{theReq}} Request Received</h1></br></br>
+
+The url query data is:  </br>
+<table>
+	{{#each urlParams}}
+		<tr>
+			<td>{{this.name}}</td><td>{{this.value}}</td>
+		</tr>
+	{{/each}}
+</table></br></br>
+
+The body data is:   </br>
+<table>
+	{{#each bodyParams}}
+		<tr>
+			<td>{{this.name}}</td>
+			<td>{{this.value}}</td>
+		</tr>
+	{{/each}}
+</table>
